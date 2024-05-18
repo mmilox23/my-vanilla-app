@@ -12,7 +12,7 @@
 <body>
   <div class="weatherr">
   <header>
-  <form>
+  <form class="search-form" id="search-form">
     
     <input type ="search" 
     placeholder="Enter a city ..."
@@ -29,29 +29,28 @@
   <main >
 <div class="current-weather">
 
-<h1 class="current-temperature">
-  <span class="current-temperature-icon">☀️</span
-    ><span class="current-temperature-value">24</span
-    ><span class="current-temperature-unit">°C</span>
-  </div>
-
+<h1 class="current-city"id="current-city">
+London
 </h1>
 </main>
 <p class="current-details">
-  <span id="current-date"></span>
+  <span id="current-date">Tuesday 19:33</span>
  ,clear sky<br>
  Humidity:<strong>87%</strong> ,Wind:<strong>4,67km/h</strong> 
 </p>
-<h2 class="current-city"id="current-city">
-London
-</h2>
+<h2 class="current-temperature">
+  <span class="current-temperature-icon">☀️</span
+    ><span class="current-temperature-value">24</span
+    ><span class="current-temperature-unit">°C</span>
+  </h2> 
 <footer>
   This project was coded by
   <a href="https://github.com/mmilox23" target="_blank"> Mildred Madzima</a>,is
   <a href="https://github.com/mmilox23/my-vanilla-app" target="_blank"> open-sourced on GitHub</a> and hosted on 
   <a href="https://tubular-cheesecake-1c3758.netlify.app/" target="_blank">Netlify</a>.
 </footer>
+</div>
 <script src="src/index.js"></script> 
-</div> 
+ 
 </body>
 </html>
