@@ -3,27 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>My vanilla weather app</title>
+    <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
+  <div class="weatherr">
   <header>
   <form>
     
-    <input type ="search" placeholder="Enter a city ..." required />
-    <input type="submit" value="search"/>
-  </header>
-  
+    <input type ="search" 
+    placeholder="Enter a city ..."
+     required
+     class="search-input"
+     id="search-input"
+     />
+    <input type="submit"
+     value="search"
+     class="search-button"
+     />
   </form>
+  </header>
+  <main >
+<div class="current-weather">
 
+<h1 class="current-temperature">
+  <span class="current-temperature-icon">☀️</span
+    ><span class="current-temperature-value">24</span
+    ><span class="current-temperature-unit">°C</span>
+  </div>
 
-<h1>
-  🌤 22°C
 </h1>
-<p>
- Tuesday 19:30 ,clear sky<br>
- Humidity:87% ,Wind:4,67km/h 
+</main>
+<p class="current-details">
+  <span id="current-date"></span>
+ ,clear sky<br>
+ Humidity:<strong>87%</strong> ,Wind:<strong>4,67km/h</strong> 
 </p>
-<h2>
+<h2 class="current-city"id="current-city">
 London
 </h2>
 <footer>
@@ -32,6 +51,7 @@ London
   <a href="https://github.com/mmilox23/my-vanilla-app" target="_blank"> open-sourced on GitHub</a> and hosted on 
   <a href="https://tubular-cheesecake-1c3758.netlify.app/" target="_blank">Netlify</a>.
 </footer>
-  
+<script src="src/index.js"></script> 
+</div> 
 </body>
 </html>
