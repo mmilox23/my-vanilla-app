@@ -1,14 +1,18 @@
 function updateWeather(response){
     let temperatureElement = document.querySelector(".current-temperature-value");
-    
-    let temperature = response.data.temperature.current;
+     let temperature = response.data.temperature.current;
      let cityElement = document.querySelector(".current-city");
-     
-     
-
+     let descriptionElement = document.querySelector("#description");
+     let humidityElement = document.querySelector("#humidity");
+     let windSpeedElement = document.querySelector("#wind-speed");
+     let timeElement = document.querySelector("#time");
+     let date = new Date(response.data.time * 1000);
      
      cityElement.innerHTML = response.data.city;
-     
+     descriptionElement.innerHTML = response.data.condition.description;
+     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+     windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+     timeElement.innerHTML = formatDate(date);
      temperatureElement.innerHTML = Math.round(temperature);
 
 }
@@ -29,8 +33,8 @@ function formatDate(date) {
        if (minutes < 10) {
       minutes = `0${minutes}`;
        }
-    let formattedDate = `${day} ${hours}:${minutes}`;
-    return formattedDate;
+     
+    return `${day} ${hours}:${minutes}`;
   
   }
 
