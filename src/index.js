@@ -55,12 +55,8 @@ function searchCity(event){
     search(searchInputElement.value);
 }
 
-let searchFormElement = document.querySelector(".search-form");
-searchFormElement.addEventListener("submit", searchCity);
 
-search("Pretoria")
-
-
+function displayForecast() {
 let forecast = document.querySelector("#forecast");
 
 forecast.innerHTML = `
@@ -75,3 +71,10 @@ forecast.innerHTML = `
         </div>
     </div>
     `;
+}
+let searchFormElement = document.querySelector(".search-form");
+searchFormElement.addEventListener("submit", searchCity);
+
+search("Pretoria")
+
+
