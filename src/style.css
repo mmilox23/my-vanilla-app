@@ -5,11 +5,11 @@ body {
   }
 
   a {
-    color: #00454d;
+    color: #01282c;
   }
 
   .weatherr {
-    background: #7bc2cb;
+    background: #127986;
     max-width: 700px;
     margin: 60px auto;
     padding: 30px;
@@ -35,7 +35,7 @@ body {
   .search-button {
     margin-left: 5px;
     font-size: 16px;
-    background-color:#00454d ;
+    background-color:#01282c ;
     color: white;
     border: none;
     padding: 20px;
@@ -70,13 +70,13 @@ body {
   }
 
   .current-details strong {
-    color: #f65282;
+    color: #8d022c;
   }
 
   .temperature-icon {
     margin-top: 16px;
     font-size: 40px;
-    margin-bottom: 10px;
+  
   }
 
   .current-temperature-value {
@@ -100,6 +100,11 @@ body {
   .weather-forecast-date {
     font-size: 18px;
     opacity: 0.6;
+  }
+  .weather-forecast-temperature-icon{
+    width: 80px;
+    height: 80px;
+
   }
   .weather-forecast-temperature-min {
     opacity: 0.6;
